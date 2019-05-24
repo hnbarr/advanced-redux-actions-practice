@@ -6,7 +6,7 @@ const currentCount = (state = 0, action) => {
       return state + 1
     case 'DECREASE_COUNTER':
       return state - 1
-    case default:
+    default:
       return state
   }
 }
@@ -17,7 +17,7 @@ const users = (state = [], action) => {
       return [...state, action.value]
     case 'REMOVE_USER':
       state.slice(1)
-    case default:
+    default:
       return state
   }
 }
@@ -26,7 +26,7 @@ const specialText = (state = "", action) => {
   switch (action.type) {
     case 'SET_SPECIAL_TEXT':
       return action.value
-    case default:
+    default:
       return state
   }
 }
@@ -35,7 +35,7 @@ const currentCity = (state = "", action) => {
   switch (action.type) {
     case 'SET_CURRENT_CITY':
       return action.value
-    case default: 
+    default: 
       return state
   }
 }
