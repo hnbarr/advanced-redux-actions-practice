@@ -4,6 +4,12 @@ export const increaseCounter = () => {
   }
 }
 
+export const decreaseCounter = () => {
+  return {
+    type: "DECREASE_COUNTER"
+  }
+}
+
 export const setSpecialText = (txt) => {
   return {
     type: "SET_SPECIAL_TEXT",

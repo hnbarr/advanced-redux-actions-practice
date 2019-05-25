@@ -8,4 +8,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapDispatchToProps)(ChangeTemperature);
+export default connect(null,mapDispatchToProps)(ChangeTemperature);
