@@ -30,10 +30,10 @@ export const removeUser = () => {
   }
 }
 
-export const setSearchText = (txt) => {
+export const setSearchText = (text) => {
   return {
     type: "SET_SEARCH_TEXT",
-    value: txt
+    value: text
   };
 }
 

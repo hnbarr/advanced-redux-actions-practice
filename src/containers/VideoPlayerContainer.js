@@ -8,4 +8,4 @@ function mapStateToProps(state) {
     };
   }
   
-  export default connect(mapStateToProps, null)(VideoPlayer);
+  export default connect(mapStateToProps)(VideoPlayer);

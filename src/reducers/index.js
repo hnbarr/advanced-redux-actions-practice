@@ -43,7 +43,7 @@ const currentCity = (state = "", action) => {
 const currentTemp = (state = 0, action) => {
   switch (action.type) {
     case 'SET_TEMP':
-      return state.value
+      return action.value
     default:
       return state
   }
@@ -69,7 +69,7 @@ const videoURL = (state = '', action) => {
 
 const searchText = (state = '', action) => {
   switch(action.type) {
-    case 'SET-SEARCH-TEXT':
+    case 'SET_SEARCH_TEXT':
       return action.value
     default: 
       return state
